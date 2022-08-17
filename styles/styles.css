@@ -76,7 +76,7 @@ form label {
     left:120px;
 }
 
-/* ======= Left Section ======= */
+/* ======= Right Section ======= */
 
 .right-section{
     background-color: var(--light-blue-100);
@@ -86,6 +86,7 @@ form label {
     display: inline-block;
     box-shadow: 0px 24px 32px -8px rgba(0,0,0,0.4);
     border-radius: 15px;
+    padding: 5px;
 }
 
 .right-section h2{
