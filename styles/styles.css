@@ -1,0 +1,154 @@
+:root{
+    /* ----- COLORS ----- */
+    /* Dark Blue */
+    --dark-blue-100: #609ed4;
+    --dark-blue-200: #356ea9;
+    --dark-blue-300: #0a3871;
+    --dark-blue-400: #072b61;
+    --dark-blue-500: #052051;
+
+    /* Light Blue */
+    --light-blue-100: #f3f5fc;
+    --light-blue-200: #eff1fa;
+    --light-blue-300: #e9ecf8;
+    --light-blue-400: #aab2d5;
+    --light-blue-500: #757fb2;
+
+    /* Gray */
+    --gray-100: #ced4da;
+    --gray-200: #adb5bd;
+    --gray-300: #868e96;
+    --gray-400: #495057;
+    --gray-500: #343a40;
+
+}
+
+body{
+    font-family: 'Inter';
+    background-color: var(--light-blue-300);
+}
+
+
+
+/* ======= Left Section ======= */
+
+.left-section{
+    width: 66vw;
+    height: 80vh;
+    display: inline-block;
+}
+
+.logo{
+    position: relative;
+    top: 0;
+    left: 5%;
+}
+
+.input-text{
+    color: var(--dark-blue-300);
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 150%;
+    margin-left:40px;
+    background-color: transparent;
+    border: none;
+    position: relative;
+    left:100px;
+}
+
+.input-text:focus{
+    outline:0;
+}
+
+form label {
+    display:block;
+    margin: 10px 20px;
+    color: var(--gray-400);
+    position: relative;
+    top:120px;
+    left:120px;
+}
+
+.botonera{
+    position:relative;
+    top:120px;
+    left:120px;
+}
+
+/* ======= Left Section ======= */
+
+.right-section{
+    background-color: var(--light-blue-100);
+    width: 30vw;
+    height:82vh;
+    margin: 30px 0px 20px 20px;
+    display: inline-block;
+    box-shadow: 0px 24px 32px -8px rgba(0,0,0,0.4);
+    border-radius: 15px;
+}
+
+.right-section h2{
+    color: var(--gray-500);
+
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 120%;
+    text-align: center;
+}
+
+.right-section p{
+    color: var(--gray-400);
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+
+}
+
+/* ======= Buttons ======= */
+
+button{
+    width: 25vw;
+    margin-left: 20px;
+    padding:24px;
+    gap:8px;
+    border-radius: 24px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+}
+
+.dark-button{
+    border: none;
+    background: var(--dark-blue-300);
+    color:var(--gray-100);
+}
+
+.dark-button:hover{
+    background: var(--dark-blue-400);
+}
+
+.light-button{
+    color:var(--dark-blue-300);
+    border: 1px solid var(--dark-blue-300);
+    background-color: var(--gray-100);
+}
+
+.light-button:hover{
+    background-color: var(--gray-200);
+}
+
+/* ======= Footer ======= */
+footer{
+    height:10.5vh;
+    background-color: var(--dark-blue-400);
+    text-align: center;
+    margin:0px;
+    padding:0px;
+}
+footer p {
+    color:var(--light-blue-100);
+    padding-top:30px;
+}
