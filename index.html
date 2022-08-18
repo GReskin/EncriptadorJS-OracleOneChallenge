@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Encriptador de texto JS - Oracle One Challenge 1</title>
 
+    
+
     <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="styles/styles.css">
 
@@ -17,8 +19,8 @@
     <section>
         <div class="left-section">
             <img src="img/logo.svg" alt="Logo Alura Latam" class="logo">
-            <form>
-                <textarea class="input-text" name="texto" id="texto" cols="50" rows="8" placeholder="Ingrese el texto aqui"></textarea>
+            <div class="form">
+                <textarea class="input-text" name="input-text" id="input-text" cols="50" rows="8" placeholder="Ingrese el texto aqui"></textarea>
                 
                 <div class="form-bottom">
                     <label>
@@ -26,13 +28,13 @@
                         Solo letras minúsculas y sin acentos
                     </label>
                     <div class="botonera">
-                        <button class="dark-button">Encriptar</button>
-                        <button class="light-button">Desencriptar</button>
+                        <button class="dark-button" id="btn-encode">Encriptar</button>
+                        <button class="light-button" id="btn-decode">Desencriptar</button>
                     </div>
-                </div>   
-            </form>
+                </div>
+            </div>     
         </div>
-        <div class="right-section">
+        <div class="right-section" id="right-section">
             <div class="right-section-content">
                 <img src="img/persona.svg" alt="imagen persona">
                 <div>
@@ -42,15 +44,17 @@
                 </div>
             </div>
         </div>
-        <div class="right-section-after">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam culpa officia, unde voluptates fugiat velit neque minima inventore facilis, voluptate tempora dolorum nisi dolores alias. Maiores sint dicta tempora facere!</p>
-            <button class="light-button">Copiar</button>
+        <div class="right-section-after" id="right-section-after">
+            <text id="output-text"></text>
+            <button class="light-button" id="btn-cpy">Copiar</button>
         </div>
 
     </section>
-        
-        <footer>
-            <p>Proyecto realizado por Gaston Reskin para el programa Oracle Next Education - 2022</p>
-        </footer>
+
+    <footer>
+        <p>Proyecto realizado por Gaston Reskin para el programa Oracle Next Education - 2022</p>
+    </footer>
+    
+    <script type="text/javascript" src="app.js"></script>
 </body>
 </html>
