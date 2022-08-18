@@ -228,7 +228,6 @@ footer p {
         width: 90%;
         height: 15%;
         margin-right:15px;
-        border-radius: 15px;
         top: 75%;
         padding: 10px 0;
     }
@@ -244,18 +243,10 @@ footer p {
 
     .right-section h2{
         font-size: 28px;
-        line-height: 120%;
-        text-align: center;
     }
     
     .right-section p{
-        color: var(--gray-400);
-    
-        font-weight: 400;
         font-size: 22px;
-        line-height: 150%;
-        text-align: center;
-    
     }
 
     
@@ -266,6 +257,39 @@ footer p {
 }
 
 /* For mobile */
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 720px) {
 
+    /* Left Section */
+    form label {
+        font-size: 16px;
+    }
+    .form-bottom{
+        margin: 0;
+        margin-top:100px;
+    }
+    button {
+        width: 85vw;
+        font-size: 18px;
+    }
+
+    /* Right Section */
+    .right-section{
+        width: 90%;
+        height: 20%;
+        top: 70%;
+        margin: 0;
+        margin-top:22px;
+    }
+
+    .right-section-content{
+        margin: 0;
+    }
+
+    .right-section h2{
+        font-size: 22px;
+    }
+
+    .right-section p{
+        font-size: 16px;
+    }
 }
