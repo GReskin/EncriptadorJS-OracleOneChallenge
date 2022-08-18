@@ -186,14 +186,79 @@ footer p {
 /* For tablets */
 
 @media only screen and (max-width: 768px) {
+    
+    section{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    
     /* Left Section */
+    .left-section{
+        width: 80%;
+        height: 65%;
+        top:0;
+        left:0;
+    }
 
+    form label {
+        font-size: 22px;
+        
+    }
+
+    .input-text{
+        font-size: 28px;
+    }
+
+    button {
+        width: 30vw;
+        font-size: 22px;
+    }
+
+    .form-bottom{
+        margin-left: 100px;
+    }
+    
 
     /* Right Section */
+
+    .right-section{
+        width: 90%;
+        height: 15%;
+        margin-right:15px;
+        border-radius: 15px;
+        top: 75%;
+        padding: 10px 0;
+    }
+
+    .right-section-content{
+        margin-top: 5%;
+    }
 
     .right-section img {
         display: none;
     }
+
+
+    .right-section h2{
+        font-size: 28px;
+        line-height: 120%;
+        text-align: center;
+    }
+    
+    .right-section p{
+        color: var(--gray-400);
+    
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 150%;
+        text-align: center;
+    
+    }
+
+    
     /* Footer */
     footer{
         display: none;
