@@ -206,9 +206,15 @@ footer{
 }
 footer p {
     color:var(--light-blue-100);
-    padding-top:30px;
+    padding-top: 25px;
+    display:inline-block;
 }
-
+.footer-links{
+    display: inline-block;
+    position:relative;
+    top:10px;
+    margin-left:50px;
+}
 /* ======= Media queries ======= */
 /* For tablets */
 
