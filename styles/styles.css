@@ -28,20 +28,29 @@ body{
     background-color: var(--light-blue-300);
 }
 
-
+section{
+    width: 100%;
+    height: 768px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
 
 /* ======= Left Section ======= */
 
 .left-section{
-    width: 66vw;
-    height: 80vh;
+    width: 66%;
+    height: 100%;
     display: inline-block;
+    position: absolute;
+    top:0;
+    left:0;
 }
 
 .logo{
     position: relative;
-    top: -15%;
-    left: 5%;
+    top:5%;
+    left:5%
 }
 
 .input-text{
@@ -53,8 +62,9 @@ body{
     background-color: transparent;
     border: none;
     position: relative;
-    left:100px;
-    bottom:50px;
+    left:7%;
+    top:70px;
+    height:550px;
 }
 
 .input-text:focus{
@@ -80,13 +90,16 @@ form label {
 
 .right-section{
     background-color: var(--light-blue-100);
-    width: 30vw;
-    height:82vh;
+    width: 30%;
+    height: 95%;
     margin: 30px 0px 20px 20px;
     display: inline-block;
     box-shadow: 0px 24px 32px -8px rgba(0,0,0,0.4);
     border-radius: 15px;
     padding: 5px;
+    position: absolute;
+    top: 0px;
+    right: 20px;
 }
 
 .right-section img{
@@ -161,4 +174,27 @@ footer{
 footer p {
     color:var(--light-blue-100);
     padding-top:30px;
+}
+
+/* ======= Media queries ======= */
+/* For tablets */
+
+@media only screen and (max-width: 768px) {
+    /* Left Section */
+
+
+    /* Right Section */
+
+    .right-section img {
+        display: none;
+    }
+    /* Footer */
+    footer{
+        display: none;
+    }
+}
+
+/* For mobile */
+@media only screen and (max-width: 375px) {
+
 }
